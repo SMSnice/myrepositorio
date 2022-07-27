@@ -20,7 +20,18 @@
 	margin: 15px 15px 15px 15px;
 	    }
   
-  
+  a:hover{
+	background-color: gold;
+  }
+
+ 
+
+  .animateNav {
+	background-color: red;
+	animation-name: animateRed;
+	animation-duration: 5s;
+  }
+  	
   #container {
 	max-width: 1200px;
 	padding: 24px;
@@ -59,7 +70,8 @@
 	flex: 1;
 	margin-top: 40px;
 	margin-bottom: 40px;
-  }
+	background-image: linear-gradient(to top, rgb(238, 176, 210), rgb(190, 190, 94));
+	 }
   
   .headline {
 	font-size: 52px;
@@ -74,9 +86,19 @@
 	padding: 0;
 	margin-top: 24px;
 	margin-bottom: 40px;
+	animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
   }
   
+  @keyframes typewriter{
+	from{width: 0;}
+	to{width: 24em;}
+  }
   
+  @keyframes blinkTextCursor{
+	from{border-right-color: rgba(255,255,255,.75);}
+	to{border-right-color: transparent;}
+  }
   
   main {
 	grid-area: main;
