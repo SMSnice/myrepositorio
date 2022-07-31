@@ -1,75 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <!-- Fav icon -->
-      <link
-        rel="shortcut icon"
-        href="img/devchallenges.png"
-        type="image/x-icon"
-      />
-      <!-- Fontawesome -->
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      />
-      <!-- Google Font -->
-      <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
-        rel="stylesheet"
-      />
-      <!-- My styles -->
-      <link rel="stylesheet" href="/CSS/Style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="/Icono/favicon.jpg"
+      type="image/x-icon"
+    />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Las Google Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <!-- Estilos  -->
+    <link rel="stylesheet" href="/CSS/style.css" />
       <title>ComerSano</title>
     </head>
+
+
 <body>
-    
-   <header>
-    <div class="logo">
-      <img src="/Imagenes/Logo_saludable.JPG" alt="Logo" />
-      </div>
-      <nav class="nav__link">
-        <a href="/Index.html" class="nav__item">Trayectoria </a>
-        <a href="/Secciones/Productos.html" class="nav__item">Productos</a>
-        <a href="/Secciones/ComerSano.html" class="nav__item">Beneficios de Comer Sano</a>
-        <a href="/Secciones/Sucursales.html" class="nav__item">Sucursales</a>
-        <a href="/Secciones/Contacto.html" class="nav__item">Contacto</a>
-       </nav> 
+  <div id="container">
+    <header>
+   <!-- NavBar  -->  
+       <nav class="navbar navbar-expand-lg shadow navbar-dark fixed-top menu">
+        <div class="container">
+          <a class="navbar-brand" href="/"
+            ><img src="/Imagenes/Logosaludableverde2.JPG" alt="Logo Tienda Saludable"
+          /></a>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item px-2">
+                <a
+                  class="nav-link text-white fw-bolder"
+                  aria-current="page"
+                  href="/Index.html"
+                  >Trayectoria</a
+                >
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link text-white fw-bolder" href="/Secciones/Productos.html"
+                  >Productos</a
+                >
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link text-white fw-bolder" href="/Secciones/ComerSano.html">Beneficios de Comer Sano</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link text-white fw-bolder" href="/Secciones/Sucursales.html">Sucursales</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link text-white fw-bolder" href="/Secciones/Contacto.html">Contacto</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <div>
-        <h3><font face="Lucida Console" color="#000080">Estudios científicos demuestran que hay una relación directa entre lo que consumimos y el funcionamiento de nuestro cerebro. En esta sección encontrará diferentes videos que brindan información al respecto.
-            <br><br>A continuación usted puede encontrar un video documental que muestra la relación entre el cerebro y la alimentación.</br></br></font></h3>
-           
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/4B8Q-v6L0hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+
+<!-- Main  -->
+    <main>
+      <section id="home" class="container-fluid intro-section">
+        <div class="comerSano">
+            <div class="textoComerSano">
+            <h5> Diversos estudios científcos demuestran que el funcionamiento de nuestro organismo está directamente relacionado con nuestra alimentación. A continuación se muestra un video explicativo.</h5>
+             </div>
+            
+              <div class="row row-cols-2 row-cols-md-3 g-4">
+                <div class="col">
+              <div class="card h-100">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4B8Q-v6L0hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="card-body">
+                  <h5 class="card-title">Relación directa entre lo que consumimos y el cerebro</h5>
+                  <p class="card-text">Video documental que explica dicha relación.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+          </div> 
+            
+            </div>
+          </div>
+            </div>
+    </main>
 
     
-    <div>
-        <h3><font face="Lucida Console" color="#000080">
-            <br><br>La importancia de una alimentación sana, por "Generalitat Valenciana", explicado en el siguiente video.</br></br></font></h3>
-           
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/2naPX6sYPEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+<!-- Footer  -->
+    <footer class="footer pt-3 bg-white">
+      <div class="footer-sm text-black">
+        <div class="container">
+          <div class="row py-4 text-center text-black">
+            <div class="col-lg-5 col-md-6 mb-md-0">Seguinos en nuestras redes sociales!</div>
+            <div class="col-lg-7 col-md-6">
+              <a href="" class="socials--item"><i class="fa fa-instagram"></i></a>
+              <a href="" class="socials--item"><i class="fa fa-twitter"></i></a>
+              <a href="" class="socials--item"
+                ><i class="fa fa-youtube-play"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom py-5">
+        <div class="container">
+          <div class="row text-center text-black">
+            <div class="col-12">
+              <div class="footer-bottom__copy">
+                &copy; Copyright 2022. Todos los derechos reservados. <a href="#">S4lud4-bl3 S.A.</a> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-    <footer>
-            
-      <div class="socials">
-       <span> Seguinos en nuestra redes sociales!</span>
-       <a href="" class="socials--item"><i class="fa fa-instagram"></i></a>
-       <a href="" class="socials--item"><i class="fa fa-twitter"></i></a>
-       <a href="" class="socials--item"
-         ><i class="fa fa-youtube-play"></i
-       ></a>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous">
+    </script> 
+
      </div>
-     <span>S4lud4-bl3 S.A. Copyright 2022. Todos los derechos reservados.</span>
-   </footer>
-
-  </body>
-</html> 
-
-
-</body>
+   </body>
 </html>
