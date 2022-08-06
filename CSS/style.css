@@ -1,0 +1,525 @@
+* {
+  box-sizing: border-box;
+  font: inherit;
+  color: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* margin: 0; */
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  color: #333;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-left: 30px;
+}
+
+p {
+  max-width: 600px;
+}
+
+.logo {
+  align-items: center;
+  margin: 15px 15px 15px 15px;
+}
+
+a:hover {
+  background-color: gold;
+}
+
+
+
+.animateNav {
+  background-color: red;
+  animation-name: animateRed;
+  animation-duration: 5s;
+}
+
+.logoyNav {
+  /* background: #2acc80; */
+  /* background: linear-gradient(to left, rgb(69, 180, 96), rgb(190, 190, 94), rgb(218, 95, 170)); */
+  background: linear-gradient(to left, rgb(92, 170, 109), rgb(224, 248, 139), rgb(209, 85, 157));
+
+}
+
+#container {
+  max-width: 1200px;
+  /* padding: 15px 15px 15px 15px; */
+  margin-top: 5px;
+  /* margin-bottom: 15px; */
+  margin-left: 30px;
+  /* margin: 0 auto; */
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  /* height: 100vh; */
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  overflow: hidden;
+}
+
+.productos {
+  max-width: 40%;
+}
+
+.textoComerSano {
+  padding-top: 5px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.comerSanoPadre {
+  margin-bottom: 30px;
+  margin-top: 1px;
+}
+
+.comerSano {
+  max-width: 100%;
+  /* margin-bottom: 90px;
+  padding-bottom: 90px; */
+
+}
+
+.textoSucursales {
+  padding-top: 24px;
+  margin-top: 24px;
+  margin-bottom: 30px;
+}
+
+
+.card {
+  height: 0;
+  padding-bottom: 1px;
+  margin-bottom: 5px;
+}
+
+.card-body {
+  width: fit-content;
+  height: fit-content;
+}
+
+header {
+  text-align: center;
+  grid-area: header;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 1px;
+  margin-left: 30px;
+  padding-bottom: 1px;
+}
+
+.nav__link {
+  margin-top: 16px;
+}
+
+.nav__item {
+  text-decoration: none;
+  color: black;
+  margin-left: 24px;
+}
+
+.nav__item:first-child {
+  margin-left: 0;
+}
+
+
+.main-content {
+  flex: 1;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-image: linear-gradient(to top, rgb(238, 176, 210), rgb(190, 190, 94));
+}
+
+.headline {
+  font-size: 52px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.description {
+  color: #828282;
+  margin: 0;
+  padding: 0;
+  margin-top: 24px;
+  margin-bottom: 40px;
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 24em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, .75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+main {
+  grid-area: main;
+}
+
+.img__portada {
+  flex: 1;
+}
+
+.img__portada img {
+  width: 80%;
+}
+
+footer {
+  display: flex;
+  grid-area: footer;
+  position: absolute;
+  bottom: 0;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 30px;
+}
+
+.socials {
+  margin-right: 40px;
+  color: #bdbdbd;
+}
+
+.socials--item {
+  margin-right: 12px;
+}
+
+.socials--item:hover {
+  color: #333;
+}
+
+
+
+
+
+/* Media queries */
+
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation {
+    flex-grow: 1;
+    margin-top: 0;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation-button {
+    display: block;
+  }
+
+  .img__portada {
+    display: flex;
+    align-items: center;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    position: absolute;
+
+  }
+}
+
+@media (min-width: 576px) {
+  header {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation {
+    flex-grow: 1;
+    margin-top: 0;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation-button {
+    display: block;
+  }
+
+  .img__portada {
+    display: flex;
+    align-items: center;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    position: absolute;
+
+  }
+
+}
+
+
+/* FORM de "Contacto" */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+.form-body {
+  margin: 10px 10px 10px 10px;
+}
+
+.form-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* min-height: 100vh; */
+  /* background-color: #559c7a; */
+  background-color: rgb(92, 170, 109);
+  /* background-color: linear-gradient(to left, rgb(92, 170, 109), rgb(224, 248, 139), rgb(209, 85, 157));  */
+}
+
+.form-holder .form-content {
+  position: relative;
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.form-content .form-items {
+  border: 3px solid #fff;
+  /* padding: 40px;  */
+  display: inline-block;
+  width: 100%;
+  min-width: 540px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-align: left;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.form-content h3 {
+  color: #fff;
+  text-align: left;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-content h3.form-title {
+  margin-bottom: 30px;
+}
+
+.form-content p {
+  color: #fff;
+  text-align: left;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+
+.form-content label,
+.was-validated .form-check-input:invalid~.form-check-label,
+.was-validated .form-check-input:valid~.form-check-label {
+  color: #fff;
+}
+
+.form-content input[type=text],
+.form-content input[type=password],
+.form-content input[type=email],
+.form-content select {
+  width: 100%;
+  padding: 9px 20px;
+  text-align: left;
+  border: 0;
+  outline: 0;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  color: #8D8D8D;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-top: 16px;
+}
+
+
+.btn-primary {
+  background-color: #6C757D;
+  outline: none;
+  border: 0px;
+  box-shadow: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #565249;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none;
+}
+
+.form-content textarea {
+  position: static !important;
+  width: 100%;
+  padding: 8px 20px;
+  border-radius: 6px;
+  text-align: left;
+  background-color: #fff;
+  border: 0;
+  font-size: 15px;
+  font-weight: 300;
+  color: #8D8D8D;
+  outline: none;
+  resize: none;
+  height: 120px;
+  -webkit-transition: none;
+  transition: none;
+  margin-bottom: 14px;
+}
+
+.form-content textarea:hover,
+.form-content textarea:focus {
+  border: 0;
+  background-color: #ebeff8;
+  color: #8D8D8D;
+}
+
+.mv-up {
+  margin-top: -9px !important;
+  margin-bottom: 8px !important;
+}
+
+.invalid-feedback {
+  color: #ff606e;
+}
+
+.valid-feedback {
+  color: #2acc80;
+  /* color: rgb(92, 170, 109); */
+  /* background: linear-gradient(to left, rgb(92, 170, 109), rgb(224, 248, 139), rgb(209, 85, 157)); */
+
+}
+
+.navbar-toggler {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+  position: relative;
+}
+
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+
+.toggler-icon {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #d3531a;
+  border-radius: 1px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.middle-bar {
+  margin-top: 0px;
+}
+
+
+/* Navbar cruz que se colapsa*/
+
+.navbar-toggler.collapsed .top-bar {
+  position: absolute;
+  top: 0px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  position: absolute;
+  top: 20px;
+  transform: rotate(0deg);
+}
+
+/* Cuando se hace click en la navegación */
+
+.navbar-toggler .top-bar {
+  top: inherit;
+  transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  top: inherit;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  top: inherit;
+  transform: rotate(-135deg);
+}
+
+/* Color de las 3 líneas */
+
+.navbar-toggler.collapsed .toggler-icon {
+  background: linear-gradient(263deg, rgba(252, 74, 74, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
