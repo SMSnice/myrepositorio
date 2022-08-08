@@ -25,6 +25,7 @@ p {
 .logo {
   align-items: center;
   margin: 15px 15px 15px 15px;
+  background-image: url('imagenes/logosaluclaro.JPG');
 }
 
 a:hover {
@@ -166,6 +167,7 @@ main {
 
 .img__portada {
   flex: 1;
+  background-image: url('imagenes/img.jpg');
 }
 
 .img__portada img {
