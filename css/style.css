@@ -167,11 +167,11 @@ main {
 
 .img__portada {
   flex: 1;
-  background-image: url('/imagenes/img1.jpg');
 }
 
 .img__portada img {
   width: 80%;
+  background-image: url('/imagenes/img1.jpg');
 }
 
 footer {
