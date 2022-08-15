@@ -1,33 +1,23 @@
-// @import "/SCSS/style.scss";
-// @import "/SCSS/componentes/variables";
-// @import "https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-
 
 main {  
         grid-area: main;
-        display: flex;
-        flex-direction: column;
+        // display: flex;
+        // flex-direction: column;
         // justify-content: center;
+        
 
-        .main-content{
+        .qSomos{
+          
           flex: 1;
-          margin-top: 40px;
-          margin-bottom: 40px;
-          background-image: $color-gradient-index;
-          width: 50%;
-
-           .headline{
-            font-size: 52px;
-            font-weight: 500;
-            margin: 0;
-            padding: 0;
-
-                .description{color: #828282;
-                  margin: 0;
-                  padding: 0;
-                  margin-top: 24px;
-                  margin-bottom: 40px;
-                  animation: typewriter 4s steps(44) 1s 1 normal both,
+          margin-top: 10px;
+          margin-bottom: 60px;
+          
+          // background-image: $color-gradient-index;
+          
+          // background: linear-gradient(to top, rgb(238, 176, 210), rgb(190, 190, 94));
+          background: map-get($colors, color-gradient-index);
+          width: 70%;
+          animation: typewriter 4s steps(44) 1s 1 normal both,
                     blinkTextCursor 500ms steps(44) infinite normal;
               
                     @keyframes typewriter {
@@ -36,7 +26,7 @@ main {
                       }
                     
                       to {
-                        width: 24em;
+                        width: 100%;
                       }
                       }
                 
@@ -53,29 +43,25 @@ main {
                                             }
             
 
-                            }
+          .headline{
+                  
+
+                .description{color: #828282;
+                  text-align: left;
+                             }
 
                       }  
+          
+                }
 
-                
-              
-      
-         .img__portada{
-          flex: 1;
-          margin-top: 40px;
-          margin-bottom: 40px;
-          
-                }  
-         
-        .img__portada img {
-        width: 30%;
-          
+
+        .calidadLema{
+          @extend .qSomos;
         }
 
-        }
-      
-       
+        .invitacion{
+          @include invitados(red, center, 270px);
 
-  
-  
+        }
+
       }

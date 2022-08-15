@@ -9,17 +9,19 @@
 }
 
 header {
-  text-align: center;
+  text-align: left;
   grid-area: header;
-  margin-right: 15px;
-  margin-top: 15px;
+  margin-right: 5px;
+  margin-top: 5px;
   margin-bottom: 15px;
-  margin-left: 30px;
+  margin-left: 5px;
+  background-color: linear-gradient(to top, rgb(238, 176, 210), rgb(190, 190, 94));
 }
 
 .nav-link {
   margin-top: 16px;
   transition: 0.5s;
+  background-color: linear-gradient(to top, rgb(238, 176, 210), rgb(190, 190, 94));
 }
 .nav-link:hover {
   background-color: gold;
@@ -29,7 +31,8 @@ header {
 .nav__item {
   text-decoration: none;
   color: black;
-  margin-left: 24px;
+  margin-left: 20px;
+  background-color: linear-gradient(to top, rgb(238, 176, 210), rgb(190, 190, 94));
 }
 
 .nav__item:first-child {
@@ -38,28 +41,13 @@ header {
 
 main {
   grid-area: main;
-  display: flex;
-  flex-direction: column;
 }
-main .main-content {
+main .qSomos, main .calidadLema {
   flex: 1;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  background-image: linear-gradient(to top, rgb(238, 176, 210), rgb(190, 190, 94));
-  width: 50%;
-}
-main .main-content .headline {
-  font-size: 52px;
-  font-weight: 500;
-  margin: 0;
-  padding: 0;
-}
-main .main-content .headline .description {
-  color: #828282;
-  margin: 0;
-  padding: 0;
-  margin-top: 24px;
-  margin-bottom: 40px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+  background: linear-gradient(to top, rgb(238, 176, 210), rgb(190, 190, 94));
+  width: 70%;
   animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
 }
 @keyframes typewriter {
@@ -67,7 +55,7 @@ main .main-content .headline .description {
     width: 0;
   }
   to {
-    width: 24em;
+    width: 100%;
   }
 }
 @keyframes blinkTextCursor {
@@ -78,13 +66,34 @@ main .main-content .headline .description {
     border-right-color: transparent;
   }
 }
-main .main-content .img__portada {
+main .qSomos .headline .description, main .calidadLema .headline .description {
+  color: #828282;
+  text-align: left;
+}
+main .invitacion {
   flex: 1;
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+  color: red;
+  text-align: center;
+  margin-left: 270px;
+  animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
 }
-main .main-content .img__portada img {
-  width: 30%;
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
 
 main .productos {
@@ -262,10 +271,8 @@ footer {
   grid-area: footer;
   position: absolute;
   bottom: 0;
-  margin-right: 15px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 30px;
+  font-size: 1rem;
+  margin: 1rem;
 }
 
 .socials {
@@ -293,12 +300,12 @@ body {
   padding-right: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-left: 30px;
+  padding-left: 5px;
   color: #333;
   margin-right: 15px;
   margin-top: 15px;
   margin-bottom: 15px;
-  margin-left: 30px;
+  margin-left: 15px;
 }
 
 p {
@@ -307,7 +314,11 @@ p {
 
 .logo {
   align-items: center;
-  margin: 15px 15px 15px 15px;
+  margin: 3px 15px 5px 0px;
+  padding-left: 30px;
+  padding-right: 200px;
+  padding-top: 3px;
+  padding-bottom: 5px;
 }
 
 header {
@@ -315,14 +326,17 @@ header {
   grid-area: header;
   margin-right: 15px;
   margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 30px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  padding-left: 327px;
+  padding-bottom: 5px;
 }
 
 .nav__link {
   text-decoration: none;
   color: black;
-  margin-left: 24px;
+  margin-left: 30px;
+  padding-left: 30px;
 }
 .nav__link:hover {
   background-color: gold;
@@ -420,7 +434,7 @@ header {
   /* padding: 15px 15px 15px 15px; */
   margin-top: 5px;
   /* margin-bottom: 15px; */
-  margin-left: 30px;
+  margin-left: 5px;
   /* margin: 0 auto; */
   display: grid;
   grid-template-rows: auto 1fr auto;
