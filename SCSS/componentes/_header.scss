@@ -3,23 +3,20 @@
     margin: 15px 15px 15px 15px;
   }
   
-//   a:hover {
-//     background-color: gold;
-//     transition: 0.5s;
-//   }
-
   header {
-    text-align: center;
+    text-align: left;
     grid-area: header;
-    margin-right: 15px;
-    margin-top: 15px;
+    margin-right: 5px;
+    margin-top: 5px;
     margin-bottom: 15px;
-    margin-left: 30px;
+    margin-left: 5px;
+    background-color: linear-gradient(to top, rgb(238, 176, 210), rgb(190, 190, 94));
     }
 
     .nav-link {
         margin-top: 16px;
         transition: 0.5s;
+        background-color: linear-gradient(to top, rgb(238, 176, 210), rgb(190, 190, 94));
 
         &:hover{
             background-color: gold;
@@ -30,8 +27,9 @@
       .nav__item {
       text-decoration: none;
       color: black;
-      margin-left: 24px;
-      }
+      margin-left: 20px;
+      background-color: linear-gradient(to top, rgb(238, 176, 210), rgb(190, 190, 94));
+            }
       
       .nav__item:first-child {
       margin-left: 0;
