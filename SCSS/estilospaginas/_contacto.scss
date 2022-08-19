@@ -1,7 +1,7 @@
 
 main{
     /* FORM de "Contacto" */
-
+   padding-bottom: 40px;
 
 
 
@@ -15,11 +15,8 @@ main{
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* min-height: 100vh; */
-  /* background-color: #559c7a; */
   background-color: $color-form-background-color;
-  /* background-color: linear-gradient(to left, rgb(92, 170, 109), rgb(224, 248, 139), rgb(209, 85, 157));  */
-}
+  }
 
 .form-holder .form-content {
   position: relative;

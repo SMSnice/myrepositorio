@@ -1,20 +1,12 @@
 
 main {  
         grid-area: main;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
         
 
         .qSomos{
-          
           flex: 1;
           margin-top: 10px;
           margin-bottom: 60px;
-          
-          // background-image: $color-gradient-index;
-          
-          // background: linear-gradient(to top, rgb(238, 176, 210), rgb(190, 190, 94));
           background: map-get($colors, color-gradient-index);
           width: 70%;
           animation: typewriter 4s steps(44) 1s 1 normal both,
