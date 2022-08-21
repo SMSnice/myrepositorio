@@ -6,7 +6,7 @@ main{
 
 
     .form-body {
-  margin: 30px 400px 30px 400px;
+  margin: 30px 350px 30px 350px;
 }
 
 .form-holder {
@@ -35,7 +35,6 @@ main{
 
 .form-content .form-items {
   border: 3px solid #fff;
-  /* padding: 40px;  */
   display: inline-block;
   width: 100%;
   min-width: 540px;
@@ -48,7 +47,7 @@ main{
 }
 
 .form-content h3 {
-  color: #fff;
+  color: black;
   text-align: left;
   font-size: 28px;
   font-weight: 600;
@@ -60,7 +59,7 @@ main{
 }
 
 .form-content p {
-  color: #fff;
+  color: black;
   text-align: left;
   font-size: 17px;
   font-weight: 300;
@@ -72,7 +71,7 @@ main{
 .form-content label,
 .was-validated .form-check-input:invalid~.form-check-label,
 .was-validated .form-check-input:valid~.form-check-label {
-  color: #fff;
+  color: black
 }
 
 .form-content input[type=text],
@@ -117,7 +116,6 @@ main{
   padding: 8px 20px;
   border-radius: 6px;
   text-align: left;
-  background-color: #fff;
   border: 0;
   font-size: 15px;
   font-weight: 300;
@@ -147,7 +145,7 @@ main{
 }
 
 .valid-feedback {
-  color: #2acc80 !important;
+  color: #f3efb0 !important;
   }
 
 }
