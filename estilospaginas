@@ -1,0 +1,65 @@
+
+main {  
+        grid-area: main;
+        
+
+        .qSomos{
+          flex: 1;
+          margin-top: 10px;
+          margin-bottom: 60px;
+          background: map-get($colors, color-gradient-index);
+          width: 70%;
+          animation: typewriter 2s steps(44) 1s 1 normal both,
+                    blinkTextCursor 270ms steps(44) infinite normal;
+              
+                    @keyframes typewriter {
+                      from {
+                        width: 0;
+                      }
+                    
+                      to {
+                        width: 100%;
+                      }
+                      }
+                
+                
+            
+                @keyframes blinkTextCursor {
+                  from {
+                    border-right-color: rgba(255, 255, 255, .75);
+                  }
+                
+                  to {
+                    border-right-color: transparent;
+                  }
+                                            }
+            
+
+          .headline{
+                  
+
+                .description{color: #828282;
+                  text-align: left;
+                             }
+
+                      }  
+          
+                }
+
+
+        .calidadLema{
+          @extend .qSomos;
+        }
+
+        .invitacion{
+          background: map-get($colors, color-gradient-index);
+          @include invitados(red, center, auto);
+          flex: 1;
+          margin-top: 10px;
+          margin-bottom: 60px;
+          margin-right: auto;
+          width: 70%;
+
+        }
+
+      }
