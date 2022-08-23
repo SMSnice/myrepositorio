@@ -78,18 +78,26 @@
       <section id="home" class="container-fluid intro-section">
         <div class="comerSano">
             <div class="textoComerSano">
-            <h5> Diversos estudios científicos demuestran que el funcionamiento de nuestro organismo está directamente relacionado con nuestra alimentación. A continuación se muestra un video explicativo.</h5>
+            <h5> Diversos estudios científcos demuestran que el funcionamiento de nuestro organismo está directamente relacionado con nuestra alimentación. A continuación se muestra un video explicativo.</h5>
              </div>
             
               <div class="row row-cols-2 row-cols-md-3 g-4">
                 <div class="col">
               <div class="card h-100">
-                <iframe width="479" height="315" position="absolute" src="https://www.youtube.com/embed/4B8Q-v6L0hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe name="iframe_box" id="iframe_box" class="iframe" scrolling="no" width="479" height="315" position="absolute" src="https://www.youtube.com/embed/4B8Q-v6L0hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <script> 
+                  var div = document.getElementById("iframe_box"); 
+                  div.onload = function() 
+                  { 
+                    
+                   div.style.height = div.contentWindow.document.body.scrollHeight + 'px'; 
+          
+                   div.style.width =  div.contentWindow.document.body.scrollWidth+'px';
+                  
+                  } 
+                </script> 
                 <div class="card-body">
-                  <h5 class="card-title">Relación directa entre lo que consumimos y el cerebro</h5>
-                  <p class="card-text">Video documental que explica dicha relación.</p>
                 </div>
-              </div>
             </div>
           </div>
         </div>
